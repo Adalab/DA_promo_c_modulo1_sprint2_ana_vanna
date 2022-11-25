@@ -58,8 +58,9 @@ group  by product_name
 order by sum(quantity) desc
 limit 1;
 
-(select product_id, sum(quantity)
-from order_details
-group by product_id
-order by sum(quantity) desc;) segun esto, camembert vendio 1577 y cabrales 706...
+-- (select product_id, sum(quantity)
+-- from order_details
+-- group by product_id
+-- order by sum(quantity) desc;) segun esto, camembert vendio 1577 y cabrales 706...no nos coinciden los números aún así, 
+-- pero el producto no coincide en absoluto con el del ejemplo.
 
